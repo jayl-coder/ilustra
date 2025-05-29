@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/highestBidTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Highest Bid: $0.0"
+        android:textSize="16sp"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/bidSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/bidAmountEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter your bid"
+            android:inputType="numberDecimal"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/placeBidButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/purple_light"
+            android:text="BID"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>
